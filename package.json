@@ -1,0 +1,20 @@
+{
+  "name": "code-adct-birthday-reminder",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "devs": "BROWSER=/opt/firefox/firefox HTTPS=true SSL_CRT_FILE=SSL_KEY_FILE=/etc/mkcert/localhost-key.pem vite"
+    
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
+  }
+}
