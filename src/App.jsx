@@ -1,14 +1,19 @@
 import { useState } from 'react'
+import data from './data'
+import List from './List'
 import logo from './logo.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [people, setPeople] = useState(data)
   return (
-    <div className="App">
-      <h2>A React Birthday Reminder App</h2>
-    </div>
+    <main>
+      <section className="container">
+        <h3>{people.length} Birthdays today</h3>
+        <List people={people} />
+        <button onClick={() => setPeople([])}>Clear All</button>
+      </section>
+    </main>
   )
 }
 
